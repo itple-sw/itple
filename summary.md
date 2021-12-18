@@ -41,7 +41,21 @@ for i in range(angle):
 * 이중 for문을 사용합니다.
 
 ![image](https://user-images.githubusercontent.com/76088532/145509610-e7630b87-2be6-42ee-86fa-86fd74806144.png)
+```python
+import turtle as t
 
+t.Turtle()
+t.bgcolor("black")
+t.color("yellow")
+t.speed(50)
+
+angle = 3
+for j in range(4):
+    for i in range(angle):
+        t.forward(100)
+        t.left(360/angle)
+    angle = angle+1
+```
 ## 여러 모양의 그림 그리기
 
 ![image](https://user-images.githubusercontent.com/76088532/145509713-dcf86009-3d9e-4624-a629-a30221fd0b49.png)
