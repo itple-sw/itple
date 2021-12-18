@@ -184,6 +184,36 @@ t.left(90)
 draw_tree(100)
 ```
 
+* 가지가 3개인 나무모양
+```python
+import turtle as t
+
+t.Turtle()
+t.bgcolor("white") 
+t.color("#89600F")
+t.speed(100)
+
+def draw_tree(length):
+    if length > 3:
+        if length < 5:
+            t.color("#0BA916")
+        else:
+            t.color("#89600F")
+        t.forward(length)
+        t.right(45)
+        draw_tree(length/2)
+        t.left(45)
+        draw_tree(length/2)
+        t.left(45)
+        draw_tree(length/2)
+        t.left(135)
+        t.forward(length)
+        t.left(180)
+        t.color("#89600F")
+
+t.left(90)
+draw_tree(100)
+```
 ## 사이핀스키 삼각형 그리기
 * 일정 길이 이하면 삼각형을 그립니다.
 * 일정 길이를 넘으면 재귀함수로 삼각형을 그립니다.
