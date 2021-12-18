@@ -61,6 +61,20 @@ for i in range(4):
 ![image](https://user-images.githubusercontent.com/76088532/145509713-dcf86009-3d9e-4624-a629-a30221fd0b49.png)
 
 ![image](https://user-images.githubusercontent.com/76088532/145509782-39a529be-b7ce-4ecc-a998-a5a94f674347.png)
+```python
+import turtle as t
+
+t.Turtle()
+t.bgcolor("black")
+t.color("yellow")
+t.speed(10)
+
+length = 2
+for i in range(100):
+    t.forward(length)
+    t.left(89)
+    length += 2
+```
 
 # turtle로 다양한 그림 그리기
 ## 회전하는 삼각형 그리기
