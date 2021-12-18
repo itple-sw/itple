@@ -50,8 +50,8 @@ t.color("yellow")
 t.speed(50)
 
 angle = 3
-for j in range(4):
-    for i in range(angle):
+for i in range(4):
+    for j in range(angle):
         t.forward(100)
         t.left(360/angle)
     angle = angle+1
