@@ -88,6 +88,26 @@ for i in range(100):
 * 예를 3으로 나누면 1,2,0,1,2,0.. 이렇게 나머지가 반복됩니다.
 
 ![image](https://user-images.githubusercontent.com/76088532/145510166-657e9e36-04fe-4b48-b60b-600d599f2005.png)
+```python
+import turtle as t
+
+t.Turtle()
+t.bgcolor("black")
+t.color("yellow")
+t.speed(10)
+
+length = 2
+for i in range(100):
+    if i % 3 == 0:
+        t.color("yellow")
+    elif i % 3 == 1:
+        t.color("blue")
+    elif i % 3 == 2:
+        t.color("red")
+    t.forward(length)
+    t.left(119)
+    length += 4
+```
 
 ## 거미줄 그리기
 * 반복문을 잘 사용합니다.
